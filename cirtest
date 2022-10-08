@@ -1,0 +1,54 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+S_0x562cbdb53d90 .scope module, "logic2" "logic2" 2 2;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "e";
+    .port_info 4 /OUTPUT 1 "y";
+    .port_info 5 /OUTPUT 1 "z";
+L_0x562cbdb9e4d0 .functor BUFZ 1, L_0x562cbdb9e590, C4<0>, C4<0>, C4<0>;
+o0x7fc7cea2b018 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7fc7cea2b048 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x562cbdb9e590 .functor OR 1, o0x7fc7cea2b018, o0x7fc7cea2b048, C4<0>, C4<0>;
+o0x7fc7cea2b0d8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x562cbdb9e630 .functor AND 1, L_0x562cbdb9e590, o0x7fc7cea2b0d8, C4<1>, C4<1>;
+L_0x562cbdb9e700 .functor NOT 1, L_0x562cbdb9e630, C4<0>, C4<0>, C4<0>;
+o0x7fc7cea2b168 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x562cbdb9e820 .functor OR 1, L_0x562cbdb9e700, o0x7fc7cea2b168, C4<0>, C4<0>;
+L_0x562cbdb9e8e0 .functor NAND 1, o0x7fc7cea2b048, L_0x562cbdb9e820, C4<1>, C4<1>;
+L_0x562cbdb9ea60 .functor AND 1, L_0x562cbdb9e820, L_0x562cbdb9e700, C4<1>, C4<1>;
+L_0x562cbdb9ead0 .functor NOT 1, L_0x562cbdb9e4d0, C4<0>, C4<0>, C4<0>;
+o0x7fc7cea2b078 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x562cbdb9ebe0 .functor NOR 1, L_0x562cbdb9ead0, o0x7fc7cea2b078, C4<0>, C4<0>;
+L_0x562cbdb9eca0 .functor AND 1, L_0x562cbdb9e8e0, L_0x562cbdb9ea60, C4<1>, C4<1>;
+L_0x562cbdb9ee10 .functor OR 1, L_0x562cbdb9ebe0, o0x7fc7cea2b018, C4<0>, C4<0>;
+v0x562cbdb53fc0_0 .net "a", 0 0, o0x7fc7cea2b018;  0 drivers
+v0x562cbdb9d810_0 .net "b", 0 0, o0x7fc7cea2b048;  0 drivers
+v0x562cbdb9d8d0_0 .net "c", 0 0, o0x7fc7cea2b078;  0 drivers
+v0x562cbdb9d970_0 .net "d", 0 0, L_0x562cbdb9e590;  1 drivers
+v0x562cbdb9da30_0 .net "e", 0 0, o0x7fc7cea2b0d8;  0 drivers
+v0x562cbdb9db40_0 .net "f", 0 0, L_0x562cbdb9e4d0;  1 drivers
+v0x562cbdb9dc00_0 .net "g", 0 0, L_0x562cbdb9e700;  1 drivers
+v0x562cbdb9dcc0_0 .net "h", 0 0, o0x7fc7cea2b168;  0 drivers
+v0x562cbdb9dd80_0 .net "j", 0 0, L_0x562cbdb9e820;  1 drivers
+v0x562cbdb9ded0_0 .net "k", 0 0, L_0x562cbdb9ebe0;  1 drivers
+v0x562cbdb9df90_0 .net "p", 0 0, L_0x562cbdb9e630;  1 drivers
+v0x562cbdb9e050_0 .net "q", 0 0, L_0x562cbdb9ead0;  1 drivers
+v0x562cbdb9e110_0 .net "w", 0 0, L_0x562cbdb9e8e0;  1 drivers
+v0x562cbdb9e1d0_0 .net "x", 0 0, L_0x562cbdb9ea60;  1 drivers
+v0x562cbdb9e290_0 .net "y", 0 0, L_0x562cbdb9ee10;  1 drivers
+v0x562cbdb9e350_0 .net "z", 0 0, L_0x562cbdb9eca0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "logic2.v";
