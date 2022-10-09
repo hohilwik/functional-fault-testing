@@ -268,4 +268,31 @@ Testcase: 32
 node: 1 s-a-0, node: 15 s-a-0, node: 16 s-a-1,
 ```
 
+The test coverage table generated from this can be seen in `TEST_COVERAGE.xlsx`
+
+We see that if we only use test cases 4, 10, 15, 19, 21, we can test for all testable faults. We also see that h sa-0, h s-a-1, and j s-a-1 are not testable.
+
+So our resulting test cases become:
+```
+00011
+01001
+01110
+10010
+10100
+```
+
+The overlapping of these test cases with other faults can clearly be seen as:
+
+```
+Testcase: 4
+node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 13 s-a-1, node: 14 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
+Testcase: 10
+node: 2 s-a-0, node: 3 s-a-1, node: 4 s-a-0, node: 6 s-a-0, node: 10 s-a-0, node: 11 s-a-1, node: 14 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
+Testcase: 15
+node: 1 s-a-1, node: 2 s-a-0, node: 3 s-a-0, node: 10 s-a-1, node: 12 s-a-1, node: 15 s-a-1, node: 16 s-a-1,
+Testcase: 19
+node: 1 s-a-0, node: 4 s-a-0, node: 5 s-a-0, node: 7 s-a-1, node: 12 s-a-1, node: 13 s-a-0, node: 15 s-a-0, node: 16 s-a-1,
+Testcase: 21
+node: 1 s-a-0, node: 2 s-a-1, node: 5 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 11 s-a-0, node: 12 s-a-0, node: 13 s-a-1, node: 15 s-a-0, node: 16 s-a-0,
+```
 
