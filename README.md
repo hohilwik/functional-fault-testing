@@ -203,9 +203,9 @@ Output table given by fault simulation for each test case:
 
 ```
 Testcase: 1
-node: 1 s-a-1, node: 2 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
+node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
 Testcase: 2
-node: 1 s-a-1, node: 2 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
+node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
 Testcase: 3
 node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 6 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
 Testcase: 4
@@ -219,13 +219,13 @@ node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node:
 Testcase: 8
 node: 1 s-a-1, node: 2 s-a-1, node: 4 s-a-1, node: 7 s-a-0, node: 9 s-a-0, node: 10 s-a-1, node: 11 s-a-0, node: 12 s-a-0, node: 15 s-a-1, node: 16 s-a-0,
 Testcase: 9
-node: 2 s-a-0, node: 3 s-a-1, node: 6 s-a-0, node: 10 s-a-0, node: 11 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
+node: 2 s-a-0, node: 3 s-a-1, node: 4 s-a-0, node: 6 s-a-0, node: 10 s-a-0, node: 11 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
 Testcase: 10
-node: 2 s-a-0, node: 3 s-a-1, node: 6 s-a-0, node: 10 s-a-0, node: 11 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
+node: 2 s-a-0, node: 3 s-a-1, node: 4 s-a-0, node: 6 s-a-0, node: 10 s-a-0, node: 11 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
 Testcase: 11
-node: 2 s-a-0, node: 3 s-a-1, node: 6 s-a-0, node: 10 s-a-0, node: 12 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
+node: 2 s-a-0, node: 3 s-a-1, node: 4 s-a-0, node: 6 s-a-0, node: 10 s-a-0, node: 12 s-a-1, node: 15 s-a-0, node: 16 s-a-1,
 Testcase: 12
-node: 2 s-a-0, node: 3 s-a-1, node: 6 s-a-0, node: 10 s-a-0, node: 15 s-a-0, node: 16 s-a-1,
+node: 2 s-a-0, node: 3 s-a-1, node: 4 s-a-0, node: 6 s-a-0, node: 10 s-a-0, node: 15 s-a-0, node: 16 s-a-1,
 Testcase: 13
 node: 1 s-a-1, node: 2 s-a-0, node: 3 s-a-0, node: 10 s-a-1, node: 11 s-a-1, node: 15 s-a-1, node: 16 s-a-1,
 Testcase: 14
