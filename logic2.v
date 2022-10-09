@@ -5,14 +5,13 @@ module logic2(
 	input wire b,
 	input wire c,
 	input wire e,
+	input wire h,
 	output wire y,
 	output wire z
 	);
 
 wire d, f, g, h, j, k, w, x, p, q;
 assign f = d;
-
-force z = 1'b0;
 
 or gate1(d, a, b);
 and gate2(p, d, e);
