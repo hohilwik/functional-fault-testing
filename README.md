@@ -48,15 +48,14 @@ module top(
 	input wire b,
 	input wire c,
 	input wire e,
+	input wire h,
 	output wire y,
 	output wire z
 	);
 
-logic2 circ(a, b, c, e, y, z);
+logic2 circ(a, b, c, e, h, y, z);
 
 initial begin
-	$display("entered");
-
 
 	if(sel==5'b00000) begin
 		// do not force
@@ -139,10 +138,10 @@ Testbench for going through all test cases, and comparing with non-faulty circui
 
 module testbench;
 
-reg in1, in2, in3, in4;
+reg in1, in2, in3, in4, in5;
 wire o1, o2;
 wire v1, v2;
-reg [3:0] testval;
+reg [4:0] testval;
 reg [4:0] sel;
 reg control;
 
@@ -150,8 +149,8 @@ integer i, stuck, node;
 integer scan1;
 integer tb_file1;
 
-top circ_fault(sel, 1'b0, in1, in2, in3, in4, o1, o2);
-logic2 circ_verify( in1, in2, in3, in4, v1, v2);
+top circ_fault(sel, 1'b0, in1, in2, in3, in4, in5, o1, o2);
+logic2 circ_verify( in1, in2, in3, in4, in5, v1, v2);
 
 initial begin
 
@@ -166,10 +165,11 @@ for(i=0; i<16; i=i+1) begin
 	scan1 = $fscanf(tb_file1, "%b\n", testval);
 	$display("\nTestcase: %d %b", i+1, testval);
 
-	in1 = testval[3];
-	in2 = testval[2];
-	in3 = testval[1];
-	in4 = testval[0];
+	in1 = testval[4];
+	in2 = testval[3];
+	in3 = testval[2];
+	in4 = testval[1];
+	in5 = testval[0];
 
 	$display("Expected: %d%d", v1, v2);		
 
