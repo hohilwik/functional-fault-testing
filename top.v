@@ -20,73 +20,71 @@ initial begin
 
 
 	if(sel==5'b00000) begin
-		// do not assign
-		$display("top");
+		// do not force
 	end
 		
 	if(sel==5'b00001) begin
-		/*force*/ circ.a = control;
-		$display("here");
+		force circ.a = control;
 	end
 	
 	if(sel==5'b00010) begin
-		/*force*/ circ.b = control;
+		force circ.b = control;
 	end
 		
 	if(sel==5'b00011) begin
-		/*force*/ circ.c = control;
+		force circ.c = control;
 	end
 
 	if(sel==5'b00100) begin
-		/*force*/ circ.d = control;
+		force circ.d = control;
 	end
 
 	if(sel==5'b00101) begin
-		/*force*/ circ.e = control;
+		force circ.e = control;
 	end
 
 	if(sel==5'b00110) begin
-		/*force*/ circ.f = control;
+		force circ.f = control;
 	end
 
 	if(sel==5'b00111) begin
-		/*force*/ circ.g = control;
+		force circ.g = control;
 	end
 
 	if(sel==5'b01000) begin
-		/*force*/ circ.h = control;
+		force circ.h = control;
 	end
 
 	if(sel==5'b01001) begin
-		/*force*/ circ.j = control;
+		force circ.j = control;
 	end
 
 	if(sel==5'b01010) begin
-		/*force*/ circ.k = control;
+		force circ.k = control;
 	end
 
 	if(sel==5'b01011) begin
-		/*force*/ circ.w = control;
+		force circ.w = control;
 	end
 
 	if(sel==5'b01100) begin
-		/*force*/ circ.x = control;
+		force circ.x = control;
 	end
 
 	if(sel==5'b01101) begin
-		/*force*/ circ.p = control;
+		force circ.p = control;
 	end
 
 	if(sel==5'b01110) begin
-		/*force*/ circ.q = control;
+		force circ.q = control;
 	end
 
 	if(sel==5'b01111) begin
-		/*force*/ circ.y = control;
+		force circ.y = control;
 	end
 
 	if(sel==5'b10000) begin
-		/*force*/ circ.z = control;
+		force circ.z = control;
 	end
 
 
