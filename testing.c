@@ -22,12 +22,14 @@ int logic2( int param, int control, int a, int b, int c, int e, int h, int *y, i
 	
 	// gate1
 	d = (a+b>0)?1:0;
-	f=d;
 	
 	if(param==4)
 	{
 		d=control;
 	}
+	
+	f = d;
+	
 	if(param==5)
 	{
 		e=control;
@@ -35,6 +37,11 @@ int logic2( int param, int control, int a, int b, int c, int e, int h, int *y, i
 	
 	// gate2
 	p = d*e;
+	
+	if(param==13)
+	{
+		p=control;
+	}
 	
 	if(param==6)
 	{
@@ -68,6 +75,12 @@ int logic2( int param, int control, int a, int b, int c, int e, int h, int *y, i
 	x = j*g;
 	// gate7
 	q = (f>0)?0:1;
+	
+	if(param==14)
+	{
+		q=control;
+	}
+	
 	// gate8
 	k = ( (q+c)>0 )?0:1;
 	
@@ -90,14 +103,6 @@ int logic2( int param, int control, int a, int b, int c, int e, int h, int *y, i
 	*z = w*x;
 	
 	
-	if(param==13)
-	{
-		p=control;
-	}
-	if(param==14)
-	{
-		q=control;
-	}
 	if(param==15)
 	{
 		*y=control;
