@@ -15,7 +15,7 @@ module logic2(
 	output wire z
 	);
 
-wire d, f, g, h, j, k, w, x, p, q;
+wire d, f, g, j, k, w, x, p, q;
 assign f = d;
 
 or gate1(d, a, b);
